@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import org.controlsfx.control.RangeSlider?>
+
+<fx:root prefHeight="145.0" prefWidth="305.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="209.0" prefWidth="337.0">
+         <children>
+            <RangeSlider blockIncrement="0.1" highValue="100.0" layoutX="20.0" layoutY="131.0" lowValue="0.0" majorTickUnit="10.0" max="100.0" minorTickCount="2" prefHeight="15.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" />
+            <ChoiceBox layoutX="76.0" layoutY="28.0" prefHeight="27.0" prefWidth="60.0" />
+            <Label layoutX="16.0" layoutY="28.0" prefHeight="27.0" prefWidth="60.0" text="Channel:" />
+            <TextField layoutX="157.0" layoutY="28.0" prefHeight="27.0" prefWidth="60.0" text="0" />
+            <TextField layoutX="248.0" layoutY="28.0" prefHeight="27.0" prefWidth="60.0" text="1" />
+            <Button layoutX="139.0" layoutY="168.0" mnemonicParsing="false" text="Extract" />
+            <ColorPicker layoutX="157.0" layoutY="78.0" prefHeight="27.0" prefWidth="59.0" />
+            <ColorPicker layoutX="249.0" layoutY="78.0" prefHeight="27.0" prefWidth="59.0" />
+            <Label layoutX="229.0" layoutY="33.0" text="-" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import org.controlsfx.control.RangeSlider?>
+
+
+<fx:root prefHeight="200.0" prefWidth="400.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="260.0" prefWidth="400.0">
+         <children>
+            <ColorPicker layoutX="246.0" layoutY="168.0" prefHeight="27.0" prefWidth="61.0" />
+            <RangeSlider blockIncrement="1.0" highValue="255.0" layoutX="89.0" layoutY="42.0" lowValue="0.0" majorTickUnit="50.0" max="255.0" minorTickCount="5" showTickLabels="true" />
+            <TextField layoutX="253.0" layoutY="45.0" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField layoutX="325.0" layoutY="45.0" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="41.0" text="Red" />
+            <Label layoutX="309.0" layoutY="50.0" text="-" />
+            <RangeSlider blockIncrement="1.0" highValue="255.0" layoutX="89.0" layoutY="83.0" lowValue="0.0" majorTickUnit="50.0" max="255.0" minorTickCount="5" showTickLabels="true" />
+            <TextField layoutX="253.0" layoutY="86.0" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField layoutX="325.0" layoutY="86.0" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="82.0" text="Green" />
+            <Label layoutX="309.0" layoutY="91.0" text="-" />
+            <RangeSlider blockIncrement="1.0" highValue="255.0" layoutX="89.0" layoutY="121.0" lowValue="0.0" majorTickUnit="50.0" max="255.0" minorTickCount="5" showTickLabels="true" />
+            <TextField layoutX="253.0" layoutY="124.0" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField layoutX="325.0" layoutY="124.0" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="120.0" text="Blue" />
+            <Label layoutX="309.0" layoutY="129.0" text="-" />
+            <CheckBox layoutX="47.0" layoutY="221.0" mnemonicParsing="false" text="Preview" />
+            <Button layoutX="169.0" layoutY="216.0" mnemonicParsing="false" text="Extract" />
+            <ColorPicker layoutX="318.0" layoutY="168.0" prefHeight="27.0" prefWidth="61.0" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>

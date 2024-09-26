@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import org.controlsfx.control.RangeSlider?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="400.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="260.0" prefWidth="400.0">
+         <children>
+            <ColorPicker fx:id="lowerPicker" layoutX="246.0" layoutY="168.0" onAction="#setPickedValueForLowFields" prefHeight="27.0" prefWidth="61.0" />
+            <RangeSlider fx:id="redRangeSlider" blockIncrement="1.0" highValue="10.0" highValueChanging="true" layoutX="89.0" layoutY="42.0" lowValue="0.0" lowValueChanging="true" majorTickUnit="50.0" max="255.0" minorTickCount="5" onMouseDragged="#mouseReleasedRedRangeSlider" onMouseReleased="#mouseReleasedRedRangeSlider" showTickLabels="true" />
+            <TextField fx:id="redLow" layoutX="253.0" layoutY="45.0" onAction="#changeRedLowValue" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField fx:id="redHigh" layoutX="325.0" layoutY="45.0" onAction="#changeRedHighValue" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="41.0" text="Red" />
+            <Label layoutX="309.0" layoutY="50.0" text="-" />
+            <RangeSlider fx:id="greenRangeSlider" blockIncrement="1.0" highValue="255.0" layoutX="89.0" layoutY="83.0" lowValue="0.0" majorTickUnit="50.0" max="255.0" minorTickCount="5" onMouseDragged="#mouseReleasedGreenRangeSlider" onMouseReleased="#mouseReleasedGreenRangeSlider" showTickLabels="true" />
+            <TextField fx:id="greenLow" layoutX="253.0" layoutY="86.0" onAction="#changeGreenLowValue" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField fx:id="greenHigh" layoutX="325.0" layoutY="86.0" onAction="#changeGreenHighValue" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="82.0" text="Green" />
+            <Label layoutX="309.0" layoutY="91.0" text="-" />
+            <RangeSlider fx:id="blueRangeSlider" blockIncrement="1.0" highValue="255.0" layoutX="89.0" layoutY="121.0" lowValue="0.0" majorTickUnit="50.0" max="255.0" minorTickCount="5" onMouseDragged="#mouseReleasedBlueRangeSlider" onMouseReleased="#mouseReleasedBlueRangeSlider" showTickLabels="true" />
+            <TextField fx:id="blueLow" layoutX="253.0" layoutY="124.0" onAction="#changeBlueLowValue" prefHeight="27.0" prefWidth="47.0" text="0" />
+            <TextField fx:id="blueHigh" layoutX="325.0" layoutY="124.0" onAction="#changeBlueHighValue" prefHeight="27.0" prefWidth="47.0" text="255" />
+            <Label layoutX="46.0" layoutY="120.0" text="Blue" />
+            <Label layoutX="309.0" layoutY="129.0" text="-" />
+            <Button fx:id="createImageButton" layoutX="169.0" layoutY="216.0" mnemonicParsing="false" onAction="#createExtractImage" text="Extract" />
+            <ColorPicker fx:id="higherPicker" layoutX="318.0" layoutY="168.0" onAction="#setPickedValueForHighFields" prefHeight="27.0" prefWidth="61.0" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>
